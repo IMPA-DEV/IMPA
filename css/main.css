@@ -143,7 +143,7 @@ h1 span{
 .home .order{
 	margin-bottom: 13px;
 }
-.order a,.btn-talk a{
+.order a,.btn-talk a,#quote-ok{
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
@@ -155,7 +155,11 @@ h1 span{
 	border-radius: 26px;
 	box-shadow: 0 0 20px 5px rgba(102, 102, 102, 0.27);
 }
-.order a:hover{
+#quote-ok {
+	padding: 0 36px;
+	border: 0;
+}
+.order a:hover,#quote-ok:hover{
 	background: #1a2038;
 }
 .wrap-txt{
@@ -307,11 +311,21 @@ footer {
 	left: 0px;
 	right: 0px;
 	z-index: 101;
+	display: none;
 }
-#popup-form .popup {
-	height: 406px;
+#popup-thanks {
+	position: fixed;
+	background-attachment: scroll;
+	height: 100vh;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 101;
+}
+#popup-form .popup,#popup-thanks .popup {
 	border-radius: 10px;
-	background: #E2E2E3;
+	background: #E5E5E6;
 	width: 90%;
 	max-width: 670px;
 	position: relative;
@@ -319,12 +333,39 @@ footer {
 	margin: 0 auto;
 	padding: 34px 30px 30px;
 }
+#popup-thanks .popup {
+	top: 30vh;
+	text-align: center;
+	padding: 54px 30px 80px;
+	font-weight: 600;
+	overflow: hidden;
+}
+#popup-thanks .popup img{
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
 #popup-form .x3 {
 	display: flex;
 	justify-content: space-between;
 }
+#popup-form .x3:before {
+	content: url(../img/dots5.png);
+	position: absolute;
+	left: -17px;
+	top: -80px;
+	opacity: 0.5;
+}
+#popup-form .x1:after {
+	content: url(../img/dots6.png);
+	position: absolute;
+	right: -35px;
+	bottom: -111px;
+	opacity: 0.5;
+
+}
 #popup-form .x1,#popup-form .x3 {
 	width: 98%;
+	position: relative;
 }
 #popup-form .x3 .form-item {
 	width: 30%;
@@ -333,18 +374,24 @@ footer {
 	border-radius: 5px;
 	border: 0;
 	width: 100%;
+	font-weight:600;
 }
 .form-item input {
 	height: 50px;
 }
+#descr {
+	z-index: 1;
+}
 .form-item input::placeholder, .form-item textarea::placeholder{
 	color: #aaadb3;
+	font-weight:500;
 }
 .form-item textarea,.form-item input {
 	padding-left: 15px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	margin-bottom: 30px;
+	margin-top: 10px;
 }
 .form-item textarea {
 	padding-top: 15px;
@@ -365,7 +412,7 @@ footer {
 	font-size: 18px;
 	font-weight: 600;
 	color: #46484c;
-	margin-bottom: 45px;
+	margin-bottom: 30px;
 }
 .overlay {
 	opacity: 0.8;
@@ -374,4 +421,49 @@ footer {
 	width: 100%;
 	position: absolute;
 	transition: 1s;
+}
+.second {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.we-dont {
+	font-size:14px;
+	color: #a2a2a2;
+	opacity: 0.7;
+	padding-top: 10px;
+}
+.close-button {
+	background: url(../img/cancel.png);
+	width: 16px;
+	height: 16px;
+	background-size: cover;
+	cursor: pointer;
+	position: absolute;
+	right: 26px;
+	top: 13px;
+}
+#popup-thanks .dots {
+	position: relative;
+}
+#popup-thanks .dots:before {
+	content: url(../img/dots5.png);
+	position: absolute;
+	left: -17px;
+	top: -44px;
+	opacity: 0.5;
+}
+#popup-thanks .dots:after {
+	content: url(../img/dots2.png);
+	position: absolute;
+	right: -7px;
+	bottom: -162px;
+	opacity: 0.5;
+}
+.thanks-text {
+	position: absolute;
+	color: #DFDFE0;
+	left: 0;
+	top: 95px;
+	font-size: 110px;
 }

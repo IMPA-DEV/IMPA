@@ -29,5 +29,14 @@ $(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-	
+
+
+    $('.close-button').click(function(){
+        $('#popup-form,#popup-thanks').hide();
+    });
+
+    $('a[href="#free"]').click(function(){
+        jQuery("#popup-form").show();
+    });
+
 });
