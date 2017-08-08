@@ -32,11 +32,17 @@ $(function() {
 
 
     $('.close-button').click(function(){
-        $('#popup-form,#popup-thanks').hide();
+        //$('#popup-form,#popup-thanks').hide();
+        $( "#popup-form,#popup-thanks,#popup-sucdetails" ).slideUp( "slow", function() { });
     });
 
     $('a[href="#free"]').click(function(){
-        jQuery("#popup-form").show();
+        //jQuery("#popup-form").show();
+        $( "#popup-form" ).slideDown( "slow", function() { });
+    });
+
+    $('a[href="#succ-details"]').click(function(){
+        $( "#popup-sucdetails" ).slideDown( "slow", function() { });
     });
 
 });

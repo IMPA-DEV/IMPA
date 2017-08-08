@@ -303,7 +303,7 @@ footer {
 	background: #2DB6EA;
 }
 
-#popup-form,#popup-thanks {
+#popup-form,#popup-thanks,#popup-sucdetails {
 	position: fixed;
 	background-attachment: scroll;
 	height: 100vh;
@@ -314,7 +314,7 @@ footer {
 	z-index: 101;
 	display: none;
 }
-#popup-form .popup,#popup-thanks .popup {
+#popup-form .popup,#popup-thanks .popup,#popup-sucdetails .popup {
 	border-radius: 10px;
 	background: #E5E5E6;
 	width: 90%;
@@ -617,6 +617,20 @@ footer {
 }
 #our-reviews {
 	padding-bottom: 100px;
+}
+#our-reviews .review.centre {
+	padding: 0 30px;
+}
+#our-reviews .review {
+	min-height: 230px;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	justify-content: space-between;
+}
+#our-reviews .review p {
+	font-size: 15px;
+	font-weight: 300;
 }
 .sitename:after {
 	content: url("../img/foreign.png");
