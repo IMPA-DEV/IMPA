@@ -19,6 +19,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+
 
 </head>
 
@@ -27,7 +30,7 @@
 	<!-- Top Line -->
 	<div id="top-line">
 		<div class="container">
-			<div class="top-line">
+			<div class="top-line closed">
 				
 				<!-- Logo -->
 				<div class="logo">
@@ -46,6 +49,7 @@
 				<div class="btn-free">
 					<a href="#free">Free Consultation</a>
 				</div>
+				<div class="nav-btn" id="navigation"></div>
 
 			</div>
 		</div>
@@ -312,26 +316,35 @@
 		<div class="overlay"></div>
 		<div class="popup">
 			<div class="close-button"></div>
-			<div id="first-suc">
+			<div id="first-suc" class="sucdetails">
 				<a class="sitename" href="http://www.lamovingcentre.com/" target="_blank">lamovingcentre.com</a>
 				<p><b>About:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc urna erat, facilisis ut lorem sed, vehicula convallis lacus. Phasellus non lorem quis urna convallis ullamcorper. Curabitur nec arcu risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus quis risus ac urna condimentum interdum. </p>
 				<p><b>Conversion:</b> Curabitur tincidunt sapien id neque finibus, in cursus urna lobortis. Duis ac ante dapibus, porttitor purus ut, vulputate massa.</p>
 				<div class="before-after">
-					<p><b>Before:</b> Curabitur tincidunt sapien id neque finibus, in cursus urna lobortis. Duis ac ante dapibus, porttitor purus ut, vulputate massa.
-						<ul>
-							<li>Nam nisl eros, ornare molestie posuere ut, fringilla ac urna- <b>14%</b></li>
-							<li>Nulla facilisi. Sed orci ex, semper nec metus eget, vehicula laoreet nibh- <b>11%</b>.</li>
-						</ul>
-					</p>
-					<p>
-						<b>After:</b> CPellentesque pretium leo diam, a hendrerit purus sagittis sit amet. Sed et mollis neque. Quisque fermentum purus euismod, ornare ante et, fringilla.
-						<ul>
-							<li>Nam nisl eros, ornare molestie posuere ut, fringilla ac urna- <b>48%</b></li>
-							<li>Nulla facilisi. Sed orci ex, semper nec metus eget, vehicula laoreet nibh- <b>63%</b>.</li>
-						</ul>
-					</p>
+					<div>
+						<p>
+							<b>Before:</b> Curabitur tincidunt sapien id neque finibus, in cursus urna lobortis. Duis ac ante dapibus, porttitor purus ut, vulputate massa.</p>
+							<ul>
+								<li>Nam nisl eros, ornare molestie posuere ut, fringilla ac urna- <b>14%</b></li>
+								<li>Nulla facilisi. Sed orci ex, semper nec metus eget, vehicula laoreet nibh- <b>11%</b>.</li>
+							</ul>
 
-
+					</div>
+					<div>
+						<p>
+							<b>After:</b> CPellentesque pretium leo diam, a hendrerit purus sagittis sit amet. Sed et mollis neque. Quisque fermentum purus euismod, ornare ante et, fringilla.</p>
+							<ul>
+								<li>Nam nisl eros, ornare molestie posuere ut, fringilla ac urna- <b>48%</b></li>
+								<li>Nulla facilisi. Sed orci ex, semper nec metus eget, vehicula laoreet nibh- <b>63%</b>.</li>
+							</ul>
+					</div>
+				</div>
+				<div class="graph">
+					<p>Put your graphic or statistic here, metric’s screens or other.</p>
+					<img src="img/lamoving-statistics.png">
+				</div>
+				<div class="order">
+					<a href="#free">I WANT THE SAME RESULTS</a>
 				</div>
 			</div>
 		</div>
@@ -340,7 +353,9 @@
 
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="js/common.js"></script>
-	
+
+
 </body>
 </html>

@@ -38,11 +38,36 @@ $(function() {
 
     $('a[href="#free"]').click(function(){
         //jQuery("#popup-form").show();
+        $( "#popup-sucdetails" ).slideUp( "slow", function() { });
         $( "#popup-form" ).slideDown( "slow", function() { });
+
+
     });
 
     $('a[href="#succ-details"]').click(function(){
         $( "#popup-sucdetails" ).slideDown( "slow", function() { });
     });
 
+    $('#navigation').click(function () {
+       /* $(".nav").slideToggle({
+            start: function () {
+                $(this).css({
+                    display: "flex"
+                })
+            }
+        });*/
+        $( ".nav" ).slideToggle( "slow", function() { });
+        $( ".top-line" ).toggleClass('closed').toggleClass("open");
+
+
+
+    });
+
+	if($( window ).width()<993) {
+        $('.reviews-row,.blocks').slick({
+            infinite: true,
+            arrows:false,
+            dots: true
+        });
+    }
 });

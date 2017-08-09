@@ -57,6 +57,7 @@ body {
 }
 #home{
 	position: relative;
+	padding-top: 80px;
 }
 #home .container{
 	position: relative;
@@ -317,8 +318,8 @@ footer {
 #popup-form .popup,#popup-thanks .popup,#popup-sucdetails .popup {
 	border-radius: 10px;
 	background: #E5E5E6;
-	width: 90%;
-	max-width: 670px;
+	width: 85%;
+	max-width: 870px;
 	position: relative;
 	top: 10vh;
 	margin: 0 auto;
@@ -632,7 +633,108 @@ footer {
 	font-size: 15px;
 	font-weight: 300;
 }
+.sitename {
+	color: #333333;
+	font-size: 16px;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.sitename:hover {
+	color: #2DB6EA;
+}
 .sitename:after {
 	content: url("../img/foreign.png");
 	padding-left: 10px;
+}
+#popup-sucdetails .sitename:after {
+	content: url("../img/foreign-blue.png");
+	padding-left: 10px;
+}
+.before-after {
+	display: flex;
+	font-size: 14px;
+}
+.before-after div {
+	width: 50%;
+}
+.before-after div:first-child {
+	padding-right: 30px;
+}
+#popup-sucdetails .popup {
+	top:5vh;
+}
+#popup-sucdetails .popup .order {
+	text-align: center;
+	padding: 50px 0;
+}
+#popup-sucdetails .sucdetails {
+	font-size:15px;
+	font-weight: 300;
+}
+#popup-sucdetails .sucdetails p {
+	padding: 30px 0 0;
+}
+#popup-sucdetails li {
+	list-style: none;
+}
+#popup-sucdetails li:before {
+	content: '•';
+	line-height: 0;
+	color: #33ccff;
+	font-size: 24px;
+	padding-right: 5px;
+}
+.graph {
+	font-size: 14px;
+	color:#999999;
+	text-align: center;
+}
+.graph img{
+	padding-top: 30px;
+	margin: 0 auto;
+}
+.nav-btn {
+	display: none;
+	background-image: url('../img/nav-btn.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+.top-line.open .nav-btn {
+	background-image: url('../img/close.svg');
+}
+#top-line {
+	position: fixed;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 2;
+}
+.sucdetails {
+	overflow-y: scroll;
+	height: 80vh;
+}
+.sucdetails::-webkit-scrollbar {
+	width: 10px;
+}
+.sucdetails::-webkit-scrollbar-track {
+	background-color: #E5E5E6;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+.sucdetails::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.1);
+} /* this will style the thumb, ignoring the track */
+
+.sucdetails::-webkit-scrollbar-button {
+	background-color: transparent;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+.sucdetails::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+.graph img {
+	max-width: 625px;
+	width: 100%;
 }
