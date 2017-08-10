@@ -481,13 +481,15 @@ footer {
 	padding: 50px 0 100px;
 }
 #our-works .work{
-	height: 310px;
+	height: 350px;
+	max-width: 350px;
 	width: 100%;
 	background-size: cover;
 	padding: 20px 30px;
 	display: flex;
 	align-items: flex-end;
 	font-weight: 600;
+	box-sizing: border-box;
 }
 #our-works .work:hover {
 	box-shadow: 0 0 0 200px rgba(45, 182, 234, 0.8) inset;
@@ -514,6 +516,7 @@ footer {
 }
 #our-works .works-row {
 	display: flex;
+	justify-content: center;
 }
 #work1 {
 	background-image: url("../img/portfolio-1.jpg");

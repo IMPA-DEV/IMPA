@@ -25,6 +25,8 @@
 @media only screen and (max-width : 992px) {
 	#toaction .text span{
 		display: block;
+	}
+	#toaction .text {
 		text-align: center;
 	}
 	#services .service {
@@ -134,6 +136,20 @@
 	#blocks {
 		padding: 50px 0;
 	}
+	#our-works .works-row {
+		flex-direction: column;
+		align-items: center;
+	}
+	#our-works .container {
+		display: flex;
+		justify-content: center;
+	}
+	#our-works .work {
+		width: initial;
+	}
+	#our-works {
+		padding: 0px 0 50px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -208,6 +224,9 @@
 	.form-item input {
 		margin-bottom: 10px;
 	}
+	#our-works .work {
+		padding: 20px 20px;
+	}
 }
 
 @media only screen and (max-width : 565px) {
@@ -228,7 +247,7 @@
 	}
 	footer {
 		font-size: 11px;
-		height: 90px;
+		height: 100px;
 	}
 	footer .container {
 		flex-direction: column;
@@ -247,6 +266,12 @@
 	}
 	#home .order {
 		text-align: center;
+	}
+	.work-description p {
+		font-size: 14px;
+	}
+	#our-works .work {
+		height: 270px;
 	}
 }
 
@@ -301,6 +326,19 @@
 	}
 	#our-successes .success p span {
 		font-size: 18px;
+	}
+	#our-works .work {
+		height: 230px;
+	}
+	.work-description p {
+		font-size: 11px;
+	}
+	#our-works .work h4 {
+		font-size: 12px;
+	}
+	#our-works .order a {
+		padding: 13px 10px;
+		font-size: 13px;
 	}
 }
 
