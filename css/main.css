@@ -730,14 +730,13 @@ footer {
 	background-color: rgba(0, 0, 0, 0.1);
 } /* this will style the thumb, ignoring the track */
 
-.sucdetails::-webkit-scrollbar-button {
-	background-color: transparent;
-} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
-
 .sucdetails::-webkit-scrollbar-corner {
 	background-color: transparent;
 }
 .graph img {
 	max-width: 625px;
 	width: 100%;
+}
+.logo img {
+    width: 170px;
 }

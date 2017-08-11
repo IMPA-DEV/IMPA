@@ -227,6 +227,18 @@
 	#our-works .work {
 		padding: 20px 20px;
 	}
+	#popup-thanks .dots:after,#popup-form .x1:after,#popup-form .x3:before {
+		display: none;
+	}
+	#popup-thanks p{
+		font-size: 15px;
+	}
+	#popup-thanks .thanks-text {
+		font-size: 110px;
+	}
+	#popup-form .form-item input, #popup-form .form-item textarea {
+		width: calc(100% - 10px);
+	}
 }
 
 @media only screen and (max-width : 565px) {
@@ -272,6 +284,17 @@
 	}
 	#our-works .work {
 		height: 270px;
+	}
+	#popup-thanks p{
+		font-size: 13px;
+	}
+	#form-2 {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		height: 80vh;
+	}
+	#popup-form .popup {
+		top: 5vh;
 	}
 }
 
@@ -339,6 +362,12 @@
 	#our-works .order a {
 		padding: 13px 10px;
 		font-size: 13px;
+	}
+	#popup-thanks p{
+		font-size: 13px;
+	}
+	#quote-ok {
+		padding: 0px 15px;
 	}
 }
 
